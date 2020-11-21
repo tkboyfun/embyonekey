@@ -1,4 +1,4 @@
-说明：这个教程属于我复制hangaj的，他可能也是复制于其他人。
+说明：这个教程属于我复制Ethan-7seng的，他可能也是复制于其他人。
 复制这个教程的原因是我安装的时候，代码里面的链接已经失效，所以我复制一遍方便修改代码。
 如有侵权请联系我删除。
 
@@ -21,13 +21,13 @@
 ### 步骤说明
 <br/>0. 在群辉中安装好Web Station跟EMBY
 <br/>1. 打开Web Station如图所示新建虚拟主机
-<br><img src="https://raw.githubusercontent.com/hangaj/embyonekey/master/webstation.png"><br>
+<br><img src="https://raw.githubusercontent.com/tkboyfun/embyonekey/master/webstation.png"><br>
 <br/>2. 打开群辉控制面板-安全性-证书
 <br/>点击新建-添加新证书-导入证书-选择下载的私钥跟证书
 <br/>证书下载地址
 ```
-https://raw.githubusercontent.com/Ethan-7seng/embyonekey/master/mb3admin.com.cert.pem
-https://raw.githubusercontent.com/Ethan-7seng/embyonekey/master/mb3admin.com.key.pem
+https://raw.githubusercontent.com/tkboyfun/embyonekey/master/mb3admin.com.cert.pem
+https://raw.githubusercontent.com/tkboyfun/embyonekey/master/mb3admin.com.key.pem
 ```
 <br><img src="https://raw.githubusercontent.com/Ethan-7seng/embyonekey/master/cert0.png"><br>
 <br/>3. 保存后在配置中将mb3admin.com的证书设置为刚导入的的证书
@@ -42,7 +42,7 @@ https://raw.githubusercontent.com/Ethan-7seng/embyonekey/master/mb3admin.com.key
 	
 如有使用ipv6,请将ipv6地址一起加入,可以避免白嫖时而有效时而无效
 <br/>举例OP.根据网络-接口-全局网络选项中的IPv6 ULA 前缀来填写
-<br/>![](https://raw.githubusercontent.com/hangaj/embyonekey/master/ULA.png)
+<br/>![](https://raw.githubusercontent.com/tkboyfun/embyonekey/master/ULA.png)
 <br/>如我的是fd59:5890:1be9::/48 搭建伪站的的IP是10.0.0.10,末尾是10,所以如下填写
 	
     fd59:5890:1be9::10 mb3admin.com
@@ -72,7 +72,7 @@ https://raw.githubusercontent.com/Ethan-7seng/embyonekey/master/mb3admin.com.key
 
 
 以root用户执行命令：<br/>
-</p><pre><code>wget -N --no-check-certificate "https://raw.githubusercontent.com/Ethan-7seng/embyonekey/master/embyonekey.sh" && chmod +x embyonekey.sh && ./embyonekey.sh</code></pre>
+</p><pre><code>wget -N --no-check-certificate "https://raw.githubusercontent.com/tkboyfun/embyonekey/master/embyonekey.sh" && chmod +x embyonekey.sh && ./embyonekey.sh</code></pre>
 
 <br/>运行完毕
 <br/>可以输入以下命令测试
@@ -91,7 +91,7 @@ ssh中运行命令查看是否正确返回值
 
 <br/>如图,打开即可拥有会员黄标
 <br/>
-<br/>![](https://raw.githubusercontent.com/hangaj/embyonekey/master/ko.png)
+<br/>![](https://raw.githubusercontent.com/tkboyfun/embyonekey/master/ko.png)
 <br/>
 <br/>在Emby Premiere中输入任何秘钥都可以激活成功
 <br/>
@@ -100,7 +100,7 @@ ssh中运行命令查看是否正确返回值
 #### 客户端证书安装
 如服务器正常白嫖后,客户端还是无法正确显示,一般是证书不正确,请在客户端安装证书
 ```
-https://raw.githubusercontent.com/hangaj/embyonekey/master/guomi.cer 
+https://raw.githubusercontent.com/tkboyfun/embyonekey/master/guomi.cer 
 ```
 下载此链接文件名为guomi.cer的证书文件后安装相应设备上
 
